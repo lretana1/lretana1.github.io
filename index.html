@@ -4,34 +4,67 @@
 <head>
   <meta charset="UTF-8" />
   <title>Run Buddy</title>
-  <link
-  rel="stylesheet" href="assets/style.css">
- 
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <!-- navigation -->
   <header>
     <h1>
-      <a href="/">RUN BUDDY</a>
+      <a href="/">
+        RUN BUDDY
+      </a>
     </h1>
     <nav>
+      <!-- Unordered list element -->
       <ul>
+        <!-- List item element-->
         <li>
+          <!-- Anchor element -->
           <a href="#what-we-do">What We Do</a>
         </li>
         <li>
           <a href="#what-you-do">What You Do</a>
         </li>
         <li>
-          <a href="#your trainers">Your Trainers</a>
+          <a href="#your-trainers">Your Trainers</a>
         </li>
         <li>
-          <a href="#reach out">Reach Out</a>
+          <a href="#reach-out">Reach Out</a>
         </li>
       </ul>
     </nav>
   </header>
+  <section>
+    <div>
+      <h3>Get Started Today</h3>
+      <p>Fill out this form and one of our trainers will schedule a consult</p>
+      <!--add form element-->  
+      <form>
+        <label for="name">Enter full name:</label>
+        <input type="text" placeholder="Your Name" name="name" id="name"/>
+        <label for="email">Enter email address:</label>
+        <input type="email" placeholder="Your email" name="email" id="email"/>
+        <label for="Phone number">Enter Phone number</label>
+        <input type="tel" placeholder="Your Phone Number" name="Phone" id="Phone"/>
+      <p>
+        Have you worked out with a trainer before?
+        <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+        <label for="trainer-yes">yes</label>
+        <input type="radio" name="trainer-confirm" id="trainer-no"/>
+        <label for="trainer-no">no</label>
+      </p>
+      <p>
+        I aknowledge that i am atleast 18 years of age
+        <input type="checkbox" Name="age-confirm" id="checkbox"/>
+        <label for="confirm-yes">Confirm</label>
+      </p>
+      <p>
+        <button type="submit">Get running!</button>
+      </p>
+      </form>
+    </div>
+  </section>
 
   <!-- hero/jumbotron -->
   <section>
@@ -60,8 +93,11 @@
   <!-- footer -->
   <footer>
     <h2>❤️ Made with love by Run Buddy.</h2>
+    <div>
+      <a href="#">Read Our Privacy Policy</a><br />
+      &copy; 2019 Run Buddy, Inc.
+    </div>
   </footer>
 </body>
 
 </html>
-
